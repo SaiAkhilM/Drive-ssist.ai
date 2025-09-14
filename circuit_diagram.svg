@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="300" y="30" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">DriveCoach Circuit Diagram</text>
+  <text x="300" y="50" font-family="Arial" font-size="14" text-anchor="middle">HC-SR04 to XIAO ESP32C3 Connection</text>
+  
+  <!-- XIAO ESP32C3 -->
+  <rect x="100" y="150" width="150" height="100" fill="#d1e7dd" stroke="#198754" stroke-width="2" rx="5" />
+  <text x="175" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">XIAO ESP32C3</text>
+  
+  <!-- ESP32 Pins -->
+  <circle cx="120" y="220" r="5" fill="#0d6efd" />
+  <text x="120" y="240" font-family="Arial" font-size="10" text-anchor="middle">5V</text>
+  
+  <circle cx="150" y="220" r="5" fill="#000000" />
+  <text x="150" y="240" font-family="Arial" font-size="10" text-anchor="middle">GND</text>
+  
+  <circle cx="180" y="220" r="5" fill="#dc3545" />
+  <text x="180" y="240" font-family="Arial" font-size="10" text-anchor="middle">D2</text>
+  
+  <circle cx="210" y="220" r="5" fill="#fd7e14" />
+  <text x="210" y="240" font-family="Arial" font-size="10" text-anchor="middle">D3</text>
+  
+  <!-- HC-SR04 Sensor -->
+  <rect x="350" y="150" width="150" height="100" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" rx="5" />
+  <text x="425" y="180" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">HC-SR04</text>
+  
+  <!-- Sensor Pins -->
+  <circle cx="380" y="220" r="5" fill="#0d6efd" />
+  <text x="380" y="240" font-family="Arial" font-size="10" text-anchor="middle">VCC</text>
+  
+  <circle cx="410" y="220" r="5" fill="#000000" />
+  <text x="410" y="240" font-family="Arial" font-size="10" text-anchor="middle">GND</text>
+  
+  <circle cx="440" y="220" r="5" fill="#dc3545" />
+  <text x="440" y="240" font-family="Arial" font-size="10" text-anchor="middle">TRIG</text>
+  
+  <circle cx="470" y="220" r="5" fill="#fd7e14" />
+  <text x="470" y="240" font-family="Arial" font-size="10" text-anchor="middle">ECHO</text>
+  
+  <!-- Connection Lines -->
+  <!-- 5V to VCC -->
+  <line x1="120" y1="220" x2="380" y2="220" stroke="#0d6efd" stroke-width="2" />
+  
+  <!-- GND to GND -->
+  <line x1="150" y1="220" x2="410" y2="220" stroke="#000000" stroke-width="2" />
+  
+  <!-- D2 to TRIG -->
+  <line x1="180" y1="220" x2="440" y2="220" stroke="#dc3545" stroke-width="2" />
+  
+  <!-- D3 to ECHO -->
+  <line x1="210" y1="220" x2="470" y2="220" stroke="#fd7e14" stroke-width="2" />
+  
+  <!-- Legend -->
+  <rect x="100" y="300" width="400" height="70" fill="#ffffff" stroke="#6c757d" stroke-width="1" rx="5" />
+  <text x="110" y="320" font-family="Arial" font-size="12" font-weight="bold">Connection Legend:</text>
+  
+  <line x1="110" y1="335" x2="130" y2="335" stroke="#0d6efd" stroke-width="2" />
+  <text x="140" y="340" font-family="Arial" font-size="12">Power (5V)</text>
+  
+  <line x1="220" y1="335" x2="240" y2="335" stroke="#000000" stroke-width="2" />
+  <text x="250" y="340" font-family="Arial" font-size="12">Ground (GND)</text>
+  
+  <line x1="350" y1="335" x2="370" y2="335" stroke="#dc3545" stroke-width="2" />
+  <text x="380" y="340" font-family="Arial" font-size="12">Trigger (D2 → TRIG)</text>
+  
+  <line x1="110" y1="355" x2="130" y2="355" stroke="#fd7e14" stroke-width="2" />
+  <text x="140" y="360" font-family="Arial" font-size="12">Echo (D3 ← ECHO)</text>
+</svg>

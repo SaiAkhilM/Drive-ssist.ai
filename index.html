@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivesist.ai - Following Distance Safety System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Drivesist.ai</h1>
+            <p>Real-Time Following Distance Safety System</p>
+        </header>
+
+        <div class="connection-status">
+            <span id="connection-icon"><i class="fas fa-bluetooth-b"></i></span>
+            <span id="connection-text">Not Connected</span>
+            <button id="connect-button" class="btn">Connect to DriveCoach</button>
+        </div>
+
+        <div class="main-display">
+            <div class="speedometer-container">
+                <div class="speedometer" id="speedometer">
+                    <div class="speed-value" id="speed-value">35</div>
+                    <div class="speed-unit">mph</div>
+                </div>
+                <div class="speed-controls">
+                    <button id="decrease-speed" class="speed-btn">-</button>
+                    <input type="number" id="speed-input" min="25" max="80" value="35">
+                    <button id="increase-speed" class="speed-btn">+</button>
+                </div>
+            </div>
+
+            <div class="distance-display">
+                <div class="current-distance">
+                    <span id="distance-value">--</span>
+                    <span class="distance-unit">feet</span>
+                </div>
+                <div class="safe-distance">
+                    <span>Safe Distance: </span>
+                    <span id="safe-distance-value">154</span>
+                    <span class="distance-unit">feet</span>
+                </div>
+            </div>
+
+            <div class="safety-status">
+                <div class="status-indicator" id="status-indicator">
+                    <span id="status-text">DISCONNECTED</span>
+                </div>
+                <div class="safety-meter-container">
+                    <div class="safety-meter">
+                        <div class="safety-meter-fill" id="safety-meter-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sensor-status">
+            <div id="sensor-status-text">Sensor Status: Disconnected</div>
+            <div id="last-reading-time">Last Reading: --</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
